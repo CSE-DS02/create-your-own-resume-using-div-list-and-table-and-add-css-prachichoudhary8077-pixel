@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        /* Same height for all top sections */
+        .equal-box {
+            background: #d9d9d9;
+            padding: 20px;
+            height: 60px;   /* SAME SPACE */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            background: #d9d9d9;
+            padding: 20px;
+            height: 60px;   /* SAME SPACE */
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            background: #d9d9d9;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-box {
+            background: #d9d9d9;
+            padding: 20px;
+            text-align: center;
+            height: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Top Row: Logo + Navigation -->
+    <div class="top-bar">
+        <div>Logo</div>
+        <div>Navigation</div>
+    </div>
+
+    <!-- Header / Banner (same space) -->
+    <div class="equal-box">
+        Header / Banner
+    </div>
+
+    <!-- Intro Text Area (same space) -->
+    <div class="equal-box">
+        Intro Text Area
+    </div>
+
+    <!-- Three Boxes Row -->
+    <div class="row">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-box">
+        Footer
+    </div>
+
+</div>
+
+</body>
+</html>
+
